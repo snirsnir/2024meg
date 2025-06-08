@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>המצאות ששינו את חיינו - מגלים וממציאים</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #8e44ad;
+            --primary-dark: #6a1b99;
+            --secondary-color: #e67e22;
+            --secondary-dark: #d35400;
+            --accent-color: #16a085;
+            --light-bg: #f4f1ff;
+            --dark-bg: #2c1810;
+            --text-color: #2d3436;
+            --light-text: #fff;
+            --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+            --hover-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Heebo', 'Rubik', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%238e44ad' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-attachment: fixed;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--light-text);
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='50' cy='50' r='12'/%3E%3Ccircle cx='20' cy='20' r='8'/%3E%3Ccircle cx='80' cy='20' r='8'/%3E%3Ccircle cx='20' cy='80' r='8'/%3E%3Ccircle cx='80' cy='80' r='8'/%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .logo-container {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 1rem;
+        }
+
+        .logo {
+            max-width: 180px;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 900;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            position: relative;
+            display: inline-block;
+        }
+
+        header h1::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary-color);
+            border-radius: 2px;
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .intro-section {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid var(--secondary-color);
+        }
+
+        .intro-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%238e44ad' fill-opacity='0.03'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' /%3E%3C/g%3E%3C/svg%3E");
+            z-index: -1;
+        }
+
+        .exhibition-title {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-weight: 900;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .exhibition-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+
+        .exhibition-description {
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: justify;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .exhibition-description p {
+            margin-bottom: 1rem;
+        }
+
+        .exhibition-description p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin: 2.5rem 0 1.5rem;
+            position: relative;
+            padding-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+            border-radius: 2px;
+        }
+
+        .exhibits-section {
+            margin-top: 4rem;
+            position: relative;
+        }
+
+        .exhibits-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .exhibit-card {
+            background-color: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+            opacity: 1;
+            position: relative;
+            border-top: 5px solid transparent;
+        }
+
+        .exhibit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--hover-shadow);
+            border-top: 5px solid var(--secondary-color);
+        }
+
+        .exhibit-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            position: relative;
+        }
+
+        .exhibit-content {
+            padding: 2rem;
+            position: relative;
+        }
+
+        .exhibit-number {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            top: -25px;
+            right: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+
+        .exhibit-name {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+
+        .exhibit-name::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            border-radius: 1.5px;
+        }
+
+        .exhibit-principle {
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: var(--text-color);
+            background-color: rgba(142, 68, 173, 0.05);
+            padding: 0.8rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .exhibit-learning {
+            color: #555;
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+            font-size: 1.05rem;
+            background-color: rgba(230, 126, 34, 0.05);
+            padding: 0.8rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .exhibit-goal {
+            font-style: italic;
+            color: var(--primary-color);
+            font-weight: 500;
+            background-color: rgba(22, 160, 133, 0.05);
+            padding: 0.8rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .category-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            z-index: 2;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .transport-badge {
+            background-color: rgba(142, 68, 173, 0.9);
+        }
+
+        .communication-badge {
+            background-color: rgba(230, 126, 34, 0.9);
+        }
+
+        .science-badge {
+            background-color: rgba(22, 160, 133, 0.9);
+        }
+
+        .discovery-badge {
+            background-color: rgba(231, 76, 60, 0.9);
+        }
+
+        .category-icon {
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 1.2rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: 2px solid #ddd;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-family: 'Heebo', 'Rubik', Arial, sans-serif;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-input::placeholder {
+            color: #aaa;
+        }
+
+        .tabs {
+            margin-top: 2.5rem;
+        }
+
+        .tab-buttons {
+            display: flex;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+            border-bottom: none;
+            gap: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .tab-button {
+            padding: 1rem 2rem;
+            background-color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .tab-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            transition: width 0.3s ease;
+            z-index: -1;
+        }
+
+        .tab-button:hover::before, .tab-button.active::before {
+            width: 100%;
+        }
+
+        .tab-button:hover, .tab-button.active {
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .tab-content {
+            display: none;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .print-btn {
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 3rem auto;
+            display: block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .print-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.7s ease;
+        }
+
+        .print-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        .print-btn:hover::before {
+            left: 100%;
+        }
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 40px, 0);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .fadeInUp {
+            animation-name: fadeInUp;
+        }
+
+        .back-header {
+            background-color: white;
+            padding: 2px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 100;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            text-align: center;
+            max-width: 250px;
+        }
+
+        .back-button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .back-arrow {
+            margin-left: 8px;
+            font-size: 1.2em;
+        }
+
+        .back-header .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* עיצוב גלריית התמונות */
+        .gallery-section {
+            margin-top: 4rem;
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .gallery-container {
+            position: relative;
+            max-width: 900px;
+            margin: 2rem auto;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .gallery-slider {
+            position: relative;
+            overflow: hidden;
+            background-color: #000;
+            border-radius: 16px;
+        }
+
+        .gallery-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            position: relative;
+        }
+
+        .gallery-slide {
+            min-width: 100%;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-slide:hover .slide-caption {
+            transform: translateY(0);
+        }
+
+        .gallery-prev, .gallery-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+            text-align: center;
+            line-height: 50px;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .gallery-prev:hover, .gallery-next:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .gallery-prev {
+            left: 20px;
+        }
+
+        .gallery-next {
+            right: 20px;
+        }
+
+        .gallery-dots {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            background-color: white;
+        }
+
+        .gallery-dot {
+            width: 12px;
+            height: 12px;
+            margin: 0 5px;
+            border-radius: 50%;
+            background-color: #bbb;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .gallery-dot.active {
+            background-color: var(--primary-color);
+            transform: scale(1.2);
+        }
+
+        footer {
+            background: linear-gradient(135deg, var(--dark-bg), #2c1810);
+            color: var(--light-text);
+            text-align: center;
+            padding: 3rem;
+            margin-top: 4rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+        }
+
+footer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' /%3E%3C/g%3E%3C/svg%3E");
+            z-index: -1;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .exhibits-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .exhibition-title {
+                font-size: 2rem;
+            }
+
+            .tab-buttons {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .tab-button {
+                padding: 0.8rem 1.2rem;
+                font-size: 0.9rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .gallery-image {
+                height: 300px;
+            }
+            
+            .gallery-prev, .gallery-next {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                line-height: 40px;
+            }
+        }
+
+        @media print {
+            header, footer, .tab-buttons, .search-input, .print-btn, .gallery-section, .back-header {
+                display: none !important;
+            }
+            
+            .container {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .exhibits-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            
+            .exhibit-card {
+                break-inside: avoid;
+                page-break-inside: avoid;
+                margin-bottom: 1rem;
+                box-shadow: none;
+                border: 1px solid #ddd;
+                transform: none !important;
+            }
+            
+            .intro-section {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            .tab-content {
+                display: block !important;
+                box-shadow: none;
+            }
+
+            .section-title::after,
+            .exhibition-title::after,
+            .exhibit-name::after {
+                display: none;
+            }
+            
+            .category-badge {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+<header class="back-header">
+    <div class="container">
+        <a href="https://technoda.org.il" class="back-button">
+            <span class="back-arrow">&#x2192;</span> חזרה לאתר הטכנודע
+        </a>
+    </div>
+</header>
+
+    <div class="container">
+        <section class="intro-section animated fadeInUp">
+            <h1 class="exhibition-title">המצאות ששינו את חיינו - מגלים וממציאים</h1>
+            
+            <div class="exhibition-description">
+                <p>התערוכה "המצאות ששינו את חיינו - מגלים וממציאים" במוזיאון מציעה מפגש אינטימי עם הרגעים המכוננים של התגליות המדעיות הגדולות. דרך אוצרות חדשנית ייחודית, המבקרים נחשפים לתיעוד ויזואלי וחוויתי של רגעי הזיקה בין האדם לגילוי - החל ברגע המיתולוגי שבו נפל התפוח על אייזק ניוטון וכלה ברגעי ההתלבטות והתבוננות של תומאס אדיסון על פתרון בעיית התאורה. הקיום המוזיאלי של התערוכה מאפשר לקהל לחוות את השתלשלות הרגשית והאינטלקטואלית של תהליכי החדשנות האנושיים.</p>
+                <p>תפיסת האוצרות החינוכית של מוזיאוננו מציבה את הילד כמגלה פעיל ולא כצופה פסיבי. המיצב הפדגוגי מזמין את המבקרים הצעירים לחוות את אופן הולדתה של רעיון דרך תהליך יצירתי מעשי של תכנון ובנייה. הנרטיב האוצרותי של התערוכה במוזיאון מתמקד בפערים הקונצפטואליים בין "גילוי" ל"המצאה", ומעניק לקהל כלים הרמנויטיים להבנת המורכבות הטמונה בתהליכי החדשנות המדעית. התכוונות האוצרותית היא לפתח חשיבה דיאלקטית יצירתית המעודדת יציאה מן המסגרות המחשבתיות הקונבנציונליות.</p>
+            </div>
+        </section>
+
+        <section class="exhibits-section">
+            <h2 class="section-title animated fadeInUp">תיקיית מוצגים</h2>
+            
+            <input type="text" class="search-input animated fadeInUp" placeholder="חיפוש מוצגים...">
+            
+            <div class="tabs">
+                <div class="tab-buttons animated fadeInUp">
+                    <button class="tab-button active" onclick="openTab(event, 'all-exhibits')">
+                        <span class="category-icon">🏆</span>כל המוצגים
+                    </button>
+                    <button class="tab-button" onclick="openTab(event, 'transport')">
+                        <span class="category-icon">🚂</span>תחבורה
+                    </button>
+                    <button class="tab-button" onclick="openTab(event, 'communication')">
+                        <span class="category-icon">📞</span>תקשורת
+                    </button>
+                    <button class="tab-button" onclick="openTab(event, 'science')">
+                        <span class="category-icon">🔬</span>מדע
+                    </button>
+                    <button class="tab-button" onclick="openTab(event, 'discovery')">
+                        <span class="category-icon">🔥</span>גילויים
+                    </button>
+                </div>
+
+                <div id="all-exhibits" class="tab-content active">
+                    <div class="exhibits-container">
+                        <!-- מוצג 1 - רכבת -->
+                        <div class="exhibit-card animated fadeInUp" data-category="transport">
+                            <div class="category-badge transport-badge">
+                                <span class="category-icon">🚂</span>תחבורה
+                            </div>
+                            <img src="1.jpg" alt="רכבת" class="exhibit-image">
+                            <div class="exhibit-content">
+                                <div class="exhibit-number">1</div>
+                                <h3 class="exhibit-name">רכבת</h3>
+                                <p class="exhibit-principle"><strong>העיקרון:</strong> הרכבת מעגל חשמלי סגור והכנסת סוללות</p>
+                                <p class="exhibit-learning">הילד ידע מהי המצאה</p>
+                                <p class="exhibit-goal">הילד יכיר המצאות חשובות לאורך ההיסטוריה</p>
+                            </div>
+                        </div>
+
+                        <!-- מוצג 2 - מטוס של האחים רייט -->
+                        <div class="exhibit-card animated fadeInUp" data-category="transport">
+                            <div class="category-badge transport-badge">
+                                <span class="category-icon">✈️</span>תעופה
+                            </div>
+                            <img src="2.jpg" alt="מטוס של האחים רייט" class="exhibit-image">
+                            <div class="exhibit-content">
+                                <div class="exhibit-number">2</div>
+                                <h3 class="exhibit-name">מטוס של האחים רייט</h3>
+                                <p class="exhibit-principle"><strong>העיקרון:</strong> המצאה חשובה מעולם התעופה</p>
+                                <p class="exhibit-learning">המצאות חשובות בנושא התעופה וגלגולן לאורך ההיסטוריה</p>
+                                <p class="exhibit-goal">הילד יכיר המצאות חשובות לאורך ההיסטוריה</p>
+                            </div>
+                        </div>
+
+                        <!-- מוצג 3 - מחשבון וחשבוניה -->
+                        <div class="exhibit-card animated fadeInUp" data-category="science">
+                            <div class="category-badge science-badge">
+                                <span class="category-icon">🧮</span>חישוב
+                            </div>
+                            <img src="3.jpg" alt="מחשבון וחשבוניה" class="exhibit-image">
+                            <div class="exhibit-content">
+                                <div class="exhibit-number">3</div>
+                                <h3 class="exhibit-name">מחשבון וחשבוניה</h3>
+                                <p class="exhibit-principle"><strong>העיקרון:</strong> התנסות בפתירת תרגיל חשבוני בעזרת המצאות שונות</p>
+                                <p class="exhibit-learning">המצאות חשובות וגלגולן בנושא המדעי חשבוני</p>
+                                <p class="exhibit-goal">הילד יכיר המצאות חשובות לאורך ההיסטוריה</p>
+                            </div>
+                        </div>
+
+                        <!-- מוצג 4 - המצאת הטלפון -->
+                        <div class="exhibit-card animated fadeInUp" data-category="communication">
+                            <div class="category-badge communication-badge">
+                                <span class="category-icon">📞</span>תקשורת
+                            </div>
+                            <img src="4.jpg" alt="המצאת הטלפון" class="exhibit-image">
+                            <div class="exhibit-content">
+                                <div class="exhibit-number">4</div>
+                                <h3 class="exhibit-name">המצאת הטלפון</h3>
+                                <p class="exhibit-principle"><strong>העיקרון:</strong> התנסות בשיח בעזרת כוסות וחוטים, טלפון חוגה וטלפון חכם</p>
+                                <p class="exhibit-learning">המצאות חשובות מעולם התקשורת וגלגולן</p>
+                                <p class="exhibit-goal">הילד יכיר ממציאים והמצאות חשובות לאורך ההיסטוריה</p>
+                            </div>
+                        </div>
+
+                        <!-- מוצג 5 - כתיבה וגלגולה -->
+                        <div class="exhibit-card animated fadeInUp" data-category="communication">
+                            <div class="category-badge communication-badge">
+                                <span class="category-icon">✍️</span>כתיבה
+                            </div>
+                            <img src="5.jpg" alt="כתיבה וגלגולה" class="exhibit-image">
+                            <div class="exhibit-content">
+                                <div class="exhibit-number">5</div>
+                                <h3 class="exhibit-name">כתיבה וגלגוליה</h3>
+                                <p class="exhibit-principle"><strong>העיקרון:</strong> התנסות בכתיבה בעזרת פחם, נוצה ודיו ועטים</p>
+                                <p class="exhibit-learning">חשיבות המצאת כלי הכתיבה וגלגולם</p>
+                                <p class="exhibit-goal">הילד יכיר ממציאים והמצאות חשובות לאורך ההיסטוריה</p>
+                            </div>
+                        </div>
+
+                        <!-- מוצג 6 - הדפסה -->
+                        <div class="exhibit-card animated fadeInUp" data-category="communication">
+                            <div class="category-badge communication-badge">
+                                <span class="category-icon">🖨️</span>הדפסה
+                            </div>
+                            <img src="6.jpg" alt="הדפסה" class="exhibit-image">
+                            <div class="exhibit-content">
+                                <div class="exhibit-number">6</div>
+                                <h3 class="exhibit-name">הדפסה</h3>
+                                <p class="exhibit-principle"><strong>העיקרון:</strong> התנסות בהדפסה ראשונית בעזרת מבלט</p>
+                                <p class="exhibit-learning">חשיבות ויעילות מכונת הכתיבה והמחשב</p>
+                                <p class="exhibit-goal">הילד יכיר ממציאים והמצאות חשובות לאורך ההיסטוריה</p>
+                            </div>
+                        </div>
+
+                        <!-- מוצג 7 - מסלול לכדור -->
+                        <div class="exhibit-card animated fadeInUp" data-category="science">
+                            <div class="category-badge science-badge">
+                                <span class="category-icon">⚽</span>תכנון
+                            </div>
+                            <img src="7.jpg" alt="מסלול לכדור" class="exhibit-image">
+                            <div class="exhibit-content">
+                                <div class="exhibit-number">7</div>
+                                <h3 class="exhibit-name">מסלול לכדור</h3>
+                                <p class="exhibit-principle"><strong>העיקרון:</strong> התנסות בהובלת כדור ממקום א למקום ב</p>
+                                <p class="exhibit-learning">תכנון וחשיבה יצירתית</p>
+                                <p class="exhibit-goal">פיתוח יזמות אישית וחשיבה יצירתית עם דגש על דמיון ויצירתיות</p>
+                            </div>
+                        </div>
+
+                        <!-- מוצג 8 - אאוריקה -->
+                        <div class="exhibit-card animated fadeInUp" data-category="science">
+                            <div class="category-badge science-badge">
+                                <span class="category-icon">🧩</span>פתרון בעיות
+                            </div>
+                            <img src="8.jpg" alt="אאוריקה - כלוב הקוף והבננה" class="exhibit-image">
+                            <div class="exhibit-content">
+                                <div class="exhibit-number">8</div>
+                                <h3 class="exhibit-name">אאוריקה - כלוב הקוף והבננה</h3>
+                                <p class="exhibit-principle"><strong>העיקרון:</strong> התנסות בתכנון תהליך</p>
+                                <p class="exhibit-learning">תכנון פעולה וחשיבה יצירתית</p>
+                                <p class="exhibit-goal">פיתוח יזמות אישית וחשיבה יצירתית עם דגש על דמיון ויצירתיות</p>
+                            </div>
+                        </div>
+
+                        <!-- מוצג 9 - גילוי האש -->
+                        <div class="exhibit-card animated fadeInUp" data-category="discovery">
+                            <div class="category-badge discovery-badge">
+                                <span class="category-icon">🔥</span>גילוי
+                            </div>
+                            <img src="9.jpg" alt="גילוי האש" class="exhibit-image">
+                            <div class="exhibit-content">
+                                <div class="exhibit-number">9</div>
+                                <h3 class="exhibit-name">גילוי האש</h3>
+                                <p class="exhibit-principle"><strong>העיקרון:</strong> התנסות בגילויים והמצאות שונות להדלקת האש לאורך ההיסטוריה</p>
+                                <p class="exhibit-learning">הבנת ההבדל שבין גילוי להמצאה וההתייעלות של ההמצאות בהיסטוריה</p>
+                                <p class="exhibit-goal">הילד ידע מהי המצאה ומהו גילוי. הילד ידע שישנן התייעלויות והמצאות חדשות לאותו הצורך</p>
+                            </div>
+                        </div>
+
+                        <!-- מוצג 10 - מעבדה -->
+                        <div class="exhibit-card animated fadeInUp" data-category="science">
+                            <div class="category-badge science-badge">
+                                <span class="category-icon">🔬</span>מדע
+                            </div>
+                            <img src="10.jpg" alt="מעבדה" class="exhibit-image">
+                            <div class="exhibit-content">
+                                <div class="exhibit-number">10</div>
+                                <h3 class="exhibit-name">מעבדה</h3>
+                                <p class="exhibit-principle"><strong>העיקרון:</strong> גלגול המצאה המיקרוסקופ, אור וזכוכית המגדלת</p>
+                                <p class="exhibit-learning">חשיבות המצאת המיקרוסקופ</p>
+                                <p class="exhibit-goal">הילד יכיר ממציאים והמצאות חשובות לאורך ההיסטוריה</p>
+                            </div>
+                        </div>
+
+                        <!-- מוצג 11 - נורה גדולה -->
+                        <div class="exhibit-card animated fadeInUp" data-category="science">
+                            <div class="category-badge science-badge">
+                                <span class="category-icon">💡</span>חשמל
+                            </div>
+                            <img src="11.jpg" alt="נורה גדולה" class="exhibit-image">
+                            <div class="exhibit-content">
+                                <div class="exhibit-number">11</div>
+                                <h3 class="exhibit-name">נורה גדולה</h3>
+                                <p class="exhibit-principle"><strong>העיקרון:</strong> המצאת הנורה</p>
+                                <p class="exhibit-learning">מהי המצאה, מי המציא את הנורה</p>
+                                <p class="exhibit-goal">הילד יכיר המצאות חשובות לאורך ההיסטוריה</p>
+                            </div>
+                        </div>
+
+                        <!-- מוצג 12 - דמויות מדענים -->
+                        <div class="exhibit-card animated fadeInUp" data-category="science">
+                            <div class="category-badge science-badge">
+                                <span class="category-icon">👨‍🔬</span>מדענים
+                            </div>
+                            <img src="12.jpg" alt="דמויות מדענים" class="exhibit-image">
+                            <div class="exhibit-content">
+                                <div class="exhibit-number">12</div>
+                                <h3 class="exhibit-name">דמויות מדענים</h3>
+                                <p class="exhibit-principle"><strong>העיקרון:</strong> הכרת מדענים מההיסטוריה</p>
+                                <p class="exhibit-learning">הכרת ממציאים ומגלים בהיסטוריה</p>
+                                <p class="exhibit-goal">הילד יכיר ממציאים והמצאות חשובות לאורך ההיסטוריה</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="transport" class="tab-content">
+                    <div class="exhibits-container transport-container">
+                        <!-- תוכן זה ימולא באמצעות JavaScript -->
+                    </div>
+                </div>
+                
+                <div id="communication" class="tab-content">
+                    <div class="exhibits-container communication-container">
+                        <!-- תוכן זה ימולא באמצעות JavaScript -->
+                    </div>
+                </div>
+                
+                <div id="science" class="tab-content">
+                    <div class="exhibits-container science-container">
+                        <!-- תוכן זה ימולא באמצעות JavaScript -->
+                    </div>
+                </div>
+
+                <div id="discovery" class="tab-content">
+                    <div class="exhibits-container discovery-container">
+                        <!-- תוכן זה ימולא באמצעות JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- כפתור להדפסת הקטלוג -->
+        <button class="print-btn">
+            <span class="category-icon">🖨️</span>הדפסה / הורדת הקטלוג
+        </button>
+        
+        <section class="gallery-section animated fadeInUp">
+            <h2 class="section-title animated fadeInUp">גלריית תמונות מהתערוכה</h2>
+            
+            <div class="gallery-container">
+                <div class="gallery-slider">
+                    <div class="gallery-track">
+                        <div class="gallery-slide">
+                            <img src="gal/1.jpg" alt="תמונה 1 מהתערוכה" class="gallery-image">
+                            <div class="slide-caption">פינה ראשונה בתערוכת המצאות ששינו את חיינו</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="gal/2.jpg" alt="תמונה 2 מהתערוכה" class="gallery-image">
+                            <div class="slide-caption">מוצגים אינטראקטיביים להכרת ההמצאות הגדולות</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="gal/3.jpg" alt="תמונה 3 מהתערוכה" class="gallery-image">
+                            <div class="slide-caption">פעילות מעשית עם המצאות מעולם התקשורת</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="gal/4.jpg" alt="תמונה 4 מהתערוכה" class="gallery-image">
+                            <div class="slide-caption">מרחב למידה והתנסות בהמצאות מדעיות</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="gal/5.jpg" alt="תמונה 5 מהתערוכה" class="gallery-image">
+                            <div class="slide-caption">הכרת דמויות מדענים וממציאים דרך ההיסטוריה</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="gal/6.jpg" alt="תמונה 6 מהתערוכה" class="gallery-image">
+                            <div class="slide-caption">סיום המסע בעולם ההמצאות והגילויים</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="gallery-prev">&#10094;</button>
+                <button class="gallery-next">&#10095;</button>
+                <div class="gallery-dots"></div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 מוזיאון הטכנודע - כל הזכויות שמורות</p>
+        <p>תערוכת "המצאות ששינו את חיינו - מגלים וממציאים"</p>
+    </footer>
+
+    <script>
+        // הוספת אנימציות לאלמנטים בעת גלילה
+        document.addEventListener('DOMContentLoaded', function() {
+            // פונקציה לאנימציות בעת גלילה
+            function animateOnScroll() {
+                const elements = document.querySelectorAll('.animated:not(.fadeInUp)');
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.2;
+                    
+                    if (elementPosition < screenPosition) {
+                        element.classList.add('fadeInUp');
+                    }
+                });
+            }
+            
+            // הפעלת האנימציה בעת טעינת העמוד ובעת גלילה
+            animateOnScroll();
+            window.addEventListener('scroll', animateOnScroll);
+            
+            // פונקציה לפתיחת טאבים
+            window.openTab = function(evt, tabName) {
+                var i, tabcontent, tablinks;
+                
+                // מסתיר את כל התוכן של הטאבים
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].classList.remove("active");
+                }
+                
+                // מסיר את הסטטוס "פעיל" מכל הכפתורים
+                tablinks = document.getElementsByClassName("tab-button");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].classList.remove("active");
+                }
+                
+       // מציג את הטאב הנוכחי ומסמן את הכפתור כפעיל
+                document.getElementById(tabName).classList.add("active");
+                evt.currentTarget.classList.add("active");
+            }
+            
+            // אירוע חיפוש
+            const searchInput = document.querySelector('.search-input');
+            const exhibitCards = document.querySelectorAll('.exhibit-card');
+            
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                exhibitCards.forEach(card => {
+                    const exhibitName = card.querySelector('.exhibit-name').textContent.toLowerCase();
+                    const exhibitPrinciple = card.querySelector('.exhibit-principle').textContent.toLowerCase();
+                    const exhibitLearning = card.querySelector('.exhibit-learning').textContent.toLowerCase();
+                    
+                    if (exhibitName.includes(searchTerm) || 
+                        exhibitPrinciple.includes(searchTerm) || 
+                        exhibitLearning.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // העתקת המוצגים לטאבים המתאימים
+            const transportExhibits = document.querySelectorAll('.exhibit-card[data-category="transport"]');
+            const communicationExhibits = document.querySelectorAll('.exhibit-card[data-category="communication"]');
+            const scienceExhibits = document.querySelectorAll('.exhibit-card[data-category="science"]');
+            const discoveryExhibits = document.querySelectorAll('.exhibit-card[data-category="discovery"]');
+            
+            // העתקת המוצגים לטאבים
+            transportExhibits.forEach(exhibit => {
+                const clone = exhibit.cloneNode(true);
+                document.querySelector('.transport-container').appendChild(clone);
+            });
+            
+            communicationExhibits.forEach(exhibit => {
+                const clone = exhibit.cloneNode(true);
+                document.querySelector('.communication-container').appendChild(clone);
+            });
+            
+            scienceExhibits.forEach(exhibit => {
+                const clone = exhibit.cloneNode(true);
+                document.querySelector('.science-container').appendChild(clone);
+            });
+
+            discoveryExhibits.forEach(exhibit => {
+                const clone = exhibit.cloneNode(true);
+                document.querySelector('.discovery-container').appendChild(clone);
+            });
+            
+            // אירוע הדפסה
+            document.querySelector('.print-btn').addEventListener('click', function() {
+                window.print();
+            });
+            
+            // הוספת אפקט הובר לכרטיסי המוצגים
+            const allCards = document.querySelectorAll('.exhibit-card');
+            
+            allCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.zIndex = "10";
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.zIndex = "1";
+                });
+            });
+
+            // קוד JavaScript לגלריית התמונות
+            const track = document.querySelector('.gallery-track');
+            const slides = Array.from(track.children);
+            const nextButton = document.querySelector('.gallery-next');
+            const prevButton = document.querySelector('.gallery-prev');
+            const dotsContainer = document.querySelector('.gallery-dots');
+            
+            // בדיקה שהגלריה קיימת
+            if (track && slides.length > 0) {
+                let currentIndex = 0;
+                
+                // יצירת נקודות ניווט
+                slides.forEach((_, index) => {
+                    const dot = document.createElement('div');
+                    dot.classList.add('gallery-dot');
+                    if (index === 0) dot.classList.add('active');
+                    dotsContainer.appendChild(dot);
+                    
+                    dot.addEventListener('click', () => {
+                        goToSlide(index);
+                    });
+                });
+                
+                const dots = Array.from(dotsContainer.children);
+                
+                // פונקציה למעבר בין שקופיות
+                const goToSlide = (index) => {
+                    currentIndex = index;
+                    
+                    // הזזת השקופיות
+                    track.style.transform = 'translateX(' + (-index * 100) + '%)';
+                    
+                    // עדכון נקודות הניווט
+                    dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === index);
+                    });
+                };
+                
+                // אירועי לחצני ניווט
+                nextButton.addEventListener('click', () => {
+                    if (currentIndex === slides.length - 1) {
+                        goToSlide(0); // חזרה להתחלה
+                    } else {
+                        goToSlide(currentIndex + 1);
+                    }
+                });
+                
+                prevButton.addEventListener('click', () => {
+                    if (currentIndex === 0) {
+                        goToSlide(slides.length - 1); // מעבר לשקופית האחרונה
+                    } else {
+                        goToSlide(currentIndex - 1);
+                    }
+                });
+                
+                // אוטומציה של מעבר בין שקופיות
+                let slideInterval = setInterval(() => {
+                    if (currentIndex === slides.length - 1) {
+                        goToSlide(0);
+                    } else {
+                        goToSlide(currentIndex + 1);
+                    }
+                }, 5000); // החלפת שקופית כל 5 שניות
+                
+                // עצירת האוטומציה בעת מעבר עכבר
+                const galleryContainer = document.querySelector('.gallery-container');
+                if (galleryContainer) {
+                    galleryContainer.addEventListener('mouseenter', () => {
+                        clearInterval(slideInterval);
+                    });
+                    
+                    // המשך האוטומציה כאשר העכבר יוצא
+                    galleryContainer.addEventListener('mouseleave', () => {
+                        slideInterval = setInterval(() => {
+                            if (currentIndex === slides.length - 1) {
+                                goToSlide(0);
+                            } else {
+                                goToSlide(currentIndex + 1);
+                            }
+                        }, 5000);
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
